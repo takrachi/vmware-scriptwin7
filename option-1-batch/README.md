@@ -19,4 +19,4 @@ Une fois la copie terminée, VMware Player est lancée avec le fichier .vmx de l
 
 * Ça prend du temps copier un fichier vmdk...
 
-* Dépendamment des droits des étudiants sur les postes du local, il faudrait avoir la permission de rouler des .bat et mettre un raccourci sur le bureau.
+* Ça dépend des droits des étudiants sur les postes du local. Il faudrait avoir la permission de rouler des .bat et mettre un raccourci sur le bureau.
