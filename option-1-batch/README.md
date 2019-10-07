@@ -19,6 +19,4 @@ Une fois la copie terminée, VMware Player est lancée avec le fichier .vmx de l
 
 * Ça prend du temps copier un fichier vmdk...
 
-* Il faut le tester sur chacun des postes vu qu'ils n'ont pas (je crois) le même nom pour le disque vrituel.
-
 * Dépendamment des droits des étudiants sur les postes du local, il faudrait avoir la permission de rouler des .bat et mettre un raccourci sur le bureau.
