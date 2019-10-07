@@ -10,7 +10,7 @@ Le script doit être déposé sur la machine virtuelle dans le chemin `c:\Window
 
 ### Vérification de la permission de script Powershell
 
-Il se peut qu'il faut permettre à la machine d'executer du script Powershell. Pour ce faire, il faut entrer cette commande dans un command prompt : 
+Il se peut qu'il faut permettre à la machine d'executer des fichiers Powershell. Pour ce faire, il faut entrer cette commande dans un command prompt : 
 
 ```Powershell
 powershell Set-ExecutionPolicy RemoteSigned
