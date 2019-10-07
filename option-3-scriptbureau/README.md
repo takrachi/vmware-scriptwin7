@@ -1,6 +1,6 @@
 ## Option 3 - Script sur le bureau de la machine virtuelle
 
-On pourrait avoir un script Powershell ou un batch file directement sur le bureau dans la machine virtuelle que l'étudiant pourrait exécuter lorsqu'il veut faire le ménage de sa machine virtuelle.
+On pourrait avoir un script Powershell/batch file directement sur le bureau de la machine virtuelle que l'étudiant pourrait exécuter lorsqu'il veut faire le ménage de sa machine.
 
 ### nettoyage.ps1
 
