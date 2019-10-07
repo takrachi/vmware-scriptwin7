@@ -1,6 +1,6 @@
 @echo off
 
-rem chemin ou se trouve les fichiers .vmdk et .vmx
+rem chemins ou se trouvent les fichiers .vmdk et .vmx
 set vm_path="C:\windows 7\"
 set vmdk_default=%vm_path%"windows 7-default.vmdk"
 set vmdk_current=%vm_path%"windows 7.vmdk"
