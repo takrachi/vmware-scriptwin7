@@ -1,5 +1,5 @@
 ## vmware-scriptwin7
-Scripts batch et Powershell permettant de réinitialiser le disque virtuel d'une machine virtuelle et/ou supprimer les fichiers RSS de la machine virtuelle
+Scripts batch et Powershell permettant l'initialisation du disque virtuel d'une machine virtuelle et/ou supprimer les fichiers RSS de la machine.
 
 
 ### [Option 1 - batch file](https://github.com/takrachi/vmware-scriptwin7/tree/master/option-1-batch)
