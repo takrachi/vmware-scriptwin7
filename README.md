@@ -2,8 +2,6 @@
 
 Script Powershell permettant de nettoyer les fichiers RSS et zip d'un utilisateur et de vider la corbeille.
 
-On pourrait avoir un script Powershell/batch file directement sur le bureau de la machine virtuelle que l'étudiant pourrait exécuter lorsqu'il veut faire le ménage de sa machine.
-
 ### Nettoyage.ps1
 
 Il y aurait un raccourci vers un script Powershell ([Nettoyage.ps1](https://github.com/takrachi/vmware-scriptwin7/blob/master/Nettoyage.ps1)) sur le bureau de la machine virtuelle que l'étudiant pourrait exécuter lorsqu'il veut faire le ménage de sa machine.  
