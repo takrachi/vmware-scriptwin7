@@ -1,17 +1,17 @@
 ## vmware-scriptwin7
-Scripts batch et Powershell permettant l'initialisation du disque virtuel d'une machine virtuelle et/ou supprimer les fichiers RSS de la machine.
 
+Script Powershell permettant de nettoyer les fichiers RSS et zip d'un utilisateur et de vider la corbeille.
 
-### [Option 1 - batch file](https://github.com/takrachi/vmware-scriptwin7/tree/master/option-1-batch)
+On pourrait avoir un script Powershell/batch file directement sur le bureau de la machine virtuelle que l'étudiant pourrait exécuter lorsqu'il veut faire le ménage de sa machine.
 
-Le but de cette option serait d'écraser le disque virtuel par un disque de défaut à chaque démarrage de la machine virtuelle. Si c'est possible, il faudrait que ce script remplace le raccourci du bureau vers VMware Player.
+### Nettoyage.ps1
 
+L'etudiant aurait un raccourci sur le bureau de la machine virtuelle qui executerait le script [Nettoyage.ps1](http://github.com/takrachi/wmare-scriptwin7/blob/master/Nettoyage.ps1)
 
-### [Option 2 - Group Policy Object/Editor](https://github.com/takrachi/vmware-scriptwin7/tree/master/option-2-GPO-Powershell)
+#### Procedure
 
-Cette option aurait pour but d'associer un script Powershell à un événement dans la machine virtuelle. On peut associer un script Powershell lorsque l'usager de la VM se déconnecte (ou bien l'éteint).
-
-### [Option 3 - Script sur le bureau de la machine virtuelle](https://github.com/takrachi/vmware-scriptwin7/tree/master/option-3-scriptbureau)
-
-On pourrait avoir un script Powershell ou un batch file directement sur le bureau de la machine virtuelle que l'étudiant pourrait exécuter lorsqu'il veut faire le ménage de sa machine virtuelle.
-
+1. Deposer le script Nettoyage.ps1 sur la VM dans `C:\Windows\`
+1. Creer un Raccourci sur le bureau
+1. Inscrire dans la location du Raccourci : `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -ExecutionPolicy Bypass -windowstyle hidden -File C:\Windows\Nettoyage.ps1`
+1. Inscrire `Nettoyage` comme nom pour le Raccourci
+1. Changer l'icon si necessaire
