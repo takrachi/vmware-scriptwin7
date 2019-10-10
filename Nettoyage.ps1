@@ -1,10 +1,10 @@
-# Popup de confirmation
+# MessageBox de confirmation
+Add-Type -AssemblyName System.Windows.Forms
 $Titre = "Suppression des fichiers RSS"
 $Message = @("Vous êtes sur le point de supprimer définitivement vos fichiers RSS.`n`n"
             "Souhaitez-vous continuer?`n`n"
             ) -join ''
-Add-Type -AssemblyName System.Windows.Forms
-$Result = [System.Windows.Forms.MessageBox]::Show($Message, $Title, 'YesNo', 'Warning', "Button2")     
+$Result = [System.Windows.Forms.MessageBox]::Show($Message, $Titre, 'YesNo', 'Warning', "Button2")     
 
 if ($Result -eq 'Yes') { # Oui
     # Cherche les fichiers d'extensions RSS et zip recursivement dans C:\Users\ puis les supprime 
@@ -16,10 +16,8 @@ if ($Result -eq 'Yes') { # Oui
     $RecycleBin = $Shell.Namespace(0xA) 
     $RecycleBin.Items() | %{ Remove-Item $_.Path -Recurse -Confirm:$false }
     
-    [System.Windows.Forms.MessageBox]::Show($Message, $Title, 'YesNo', 'Warning', "Button2") 
-    $Shell_VB.popup("Vos fichiers ont été supprimés.`n", 0, "Suppression terminée")
+    [System.Windows.Forms.MessageBox]::Show("Vos fichiers ont été supprimés.`n", "Suppression terminée", 'OK') 
 }
 else { # Non
-    [System.Windows.Forms.MessageBox]::Show($Message, $Title, 'YesNo', 'Warning', "Button2") 
-    $Shell_VB.popup("Opération annulée.`n", 0, "Suppression annulée")
+    [System.Windows.Forms.MessageBox]::Show("Opération annulée.`n", "Suppression annulée", 'OK') 
 }
