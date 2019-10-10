@@ -14,10 +14,10 @@ if ($Decision -eq 6) { # Oui
     # Vide la corbeille
     $Shell = New-Object -ComObject Shell.Application 
     $RecycleBin = $Shell.Namespace(0xA) 
-    $RecycleBin.Items() | %{Remove-Item $_.Path -Recurse -Confirm:$false}
+    $RecycleBin.Items() | %{ Remove-Item $_.Path -Recurse -Confirm:$false }
     
     $Shell_VB.popup("Vos fichiers ont été supprimés.`n", 0, "Suppression terminée")
 }
-else { # Non
+else { # Non/Annuler
     $Shell_VB.popup("Opération annulée.`n", 0, "Suppression annulée")
 }
